@@ -3,21 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>>_ Berkan GUCIN</title>
+  <title>>_ Berkan GUCIN | Software Developer</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #16161d;
+      color: #e4e4e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(6px);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .container:hover {
+      transform: translateY(-4px);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #a1a1aa;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0.8rem 0;
+    }
+
+    a {
+      color: #4ea1f3;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #7cc7ff;
+    }
+
+    .icon-link {
+      display: inline-block;
+      margin: 0.4rem 0;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div>
-    <p><strong>Berkan GUCIN | Software Developer</strong></p>
+  <div class="container">
+    <h1>Berkan GUCIN</h1>
+    <h2>Software Developer</h2>
 
     <p>Specialized in full-stack development including modern web applications, scalable mobile apps, and robust backend systems.</p>
 
     <p>Experience with RESTful APIs, IoT device integration, cloud services, and real-time data processing.</p>
 
-    <p>📧 <a href="mailto:berkan.gucin@gmail.com">berkan.gucin@gmail.com</a></p>
-
-    <p>🌐 <a href="http://brkngcn.com" target="_blank" rel="noopener noreferrer">brkngcn.com</a></p>
-
-    <p>💻 <a href="https://github.com/brkngcn" target="_blank" rel="noopener noreferrer">github.com/brkngcn</a></p>
+    <div class="links">
+      <p class="icon-link">📧 <a href="mailto:berkan.gucin@gmail.com">berkan.gucin@gmail.com</a></p>
+      <p class="icon-link">🌐 <a href="http://brkngcn.com" target="_blank" rel="noopener noreferrer">brkngcn.com</a></p>
+      <p class="icon-link">💻 <a href="https://github.com/brkngcn" target="_blank" rel="noopener noreferrer">github.com/brkngcn</a></p>
+    </div>
   </div>
 </body>
 </html>
