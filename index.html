@@ -10,52 +10,46 @@
       margin: 0;
       padding: 0;
       font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #16161d;
+      background-color: #16161d; /* Eigengrau */
       color: #e4e4e7;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      text-align: center;
+      height: 50vh;
+      padding: 2rem;
     }
 
-    .container {
-      max-width: 600px;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 2rem 3rem;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(6px);
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .container:hover {
-      transform: translateY(-4px);
-    }
-
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+    header h1 {
+      font-size: 2rem;
       color: #ffffff;
-      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
     }
 
-    h2 {
-      font-size: 1rem;
+    header h2 {
+      font-size: 1.1rem;
       color: #a1a1aa;
       font-weight: 400;
       margin-bottom: 1.5rem;
     }
 
-    p {
-      line-height: 1.6;
-      margin: 0.8rem 0;
+    header p {
+      max-width: 600px;
+      margin: 0.6rem auto;
+    }
+
+    .links p {
+      margin: 0.4rem 0;
     }
 
     a {
-      color: #4ea1f3;
+      color: #027d7d;
       text-decoration: none;
-      font-weight: 500;
       transition: color 0.2s ease;
     }
 
@@ -63,37 +57,126 @@
       color: #7cc7ff;
     }
 
-    .icon-link {
-      display: inline-block;
-      margin: 0.4rem 0;
+    section.services {
+      padding: 5rem 2rem;
+      background-color: #1b1b23;
+    }
+
+    .services h3 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      padding: 1.8rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .service-card h4 {
+      color: #027d7d;
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .service-card p {
+      color: #d4d4d8;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem;
+      header {
+        height: auto;
+        padding: 4rem 1rem;
       }
-
-      h1 {
-        font-size: 1.5rem;
+      .services h3 {
+        font-size: 1.4rem;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <header>
     <h1>Software Developer</h1>
     <h2>Berkan GUCIN</h2>
 
     <p>Specialized in full-stack development including modern web applications, scalable mobile apps, and robust backend systems.</p>
-
     <p>Experience with RESTful APIs, IoT device integration, cloud services, and real-time data processing.</p>
 
     <div class="links">
-      <p class="icon-link">📧 <a href="mailto:berkan.gucin@gmail.com">berkan.gucin@gmail.com</a></p>
-      <p class="icon-link">🌐 <a href="http://brkngcn.com" target="_blank" rel="noopener noreferrer">brkngcn.com</a></p>
-      <p class="icon-link">💻 <a href="https://github.com/brkngcn" target="_blank" rel="noopener noreferrer">github.com/brkngcn</a></p>
+      <p>📧 <a href="mailto:berkan.gucin@gmail.com">berkan.gucin@gmail.com</a></p>
+      <p>🌐 <a href="http://brkngcn.com" target="_blank" rel="noopener noreferrer">brkngcn.com</a></p>
+      <p>💻 <a href="https://github.com/brkngcn" target="_blank" rel="noopener noreferrer">github.com/brkngcn</a></p>
     </div>
-  </div>
+  </header>
+
+  <section class="services">
+    <h3>Services & Areas of Expertise</h3>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h4>IoT Projects & System Integration</h4>
+        <p>Designing and developing interconnected IoT systems for industrial and consumer-grade applications with robust communication layers.</p>
+      </div>
+
+      <div class="service-card">
+        <h4>Cloud & AI Solutions</h4>
+        <p>Building scalable cloud infrastructures and implementing AI-driven automation, machine learning models, and predictive analytics.</p>
+      </div>
+
+      <div class="service-card">
+        <h4>Data Analytics & Visualization</h4>
+        <p>Transforming complex datasets into actionable insights with interactive dashboards and real-time visualization tools.</p>
+      </div>
+
+      <div class="service-card">
+        <h4>Custom Software Development</h4>
+        <p>Creating tailor-made software solutions to meet specific business requirements across different industries and platforms.</p>
+      </div>
+
+      <div class="service-card">
+        <h4>Business Process Automation</h4>
+        <p>Optimizing workflows by automating repetitive processes to increase operational efficiency and reduce costs.</p>
+      </div>
+
+      <div class="service-card">
+        <h4>Medical & Hospital Software</h4>
+        <p>Developing secure, compliant, and user-friendly medical and healthcare software systems for clinics and hospitals.</p>
+      </div>
+
+      <div class="service-card">
+        <h4>Technical Support & Maintenance</h4>
+        <p>Providing long-term technical support, maintenance, and system monitoring to ensure stability and continuous improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Berkan Gucin — All rights reserved.
+  </footer>
 </body>
 </html>
